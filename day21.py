@@ -3,7 +3,7 @@
 from cryptography.fernet import Fernet
 
 files = []
-arquivo = "txt/day21.txt"
+arquivo = ""
 
 key = Fernet.generate_key()
 
