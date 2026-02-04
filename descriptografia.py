@@ -4,7 +4,7 @@ from cryptography.fernet import Fernet
 
 files = []
 
-arquivo = "txt/day21.txt"
+arquivo = ""
 
 with open("keys/chave.key", 'rb') as chave:
     key = chave.read()
