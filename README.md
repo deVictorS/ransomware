@@ -1,8 +1,8 @@
-# Ransomware 🔐🚨
+# Ransomware 
 
 Um projeto educacional que demonstra como funciona criptografia de arquivos, implementando um sistema de cifra simétrica com a biblioteca Fernet. **PROJETO EXCLUSIVAMENTE PARA FINS EDUCACIONAIS.**
 
-## ⚠️ AVISO LEGAL CRÍTICO
+##  AVISO LEGAL CRÍTICO
 
 **Este projeto é APENAS para fins educacionais de pesquisa de segurança defensiva.**
 
@@ -14,19 +14,19 @@ O uso não autorizado deste software para:
 - Chantagem ou extorsão
 
 **É CRIME E TERRORISMO CIBERNÉTICO com penas severas:**
-- ⚠️ **Prisão de 5 a 20 anos**
-- 💰 **Multas de milhões de dólares**
-- 📋 **Antecedentes criminais permanentes**
-- ⚖️ **Processos criminais federais**
-- 🌍 **Perseguição internacional**
+-  **Prisão de 5 a 20 anos**
+-  **Multas de milhões de dólares**
+-  **Antecedentes criminais permanentes**
+-  **Processos criminais federais**
+-  **Perseguição internacional**
 
 **O ransomware custou bilhões em danos globalmente. NUNCA use este código maliciosamente.**
 
-## 📋 Descrição
+##  Descrição
 
 Este projeto implementa um sistema educacional de criptografia e descriptografia de arquivos usando o algoritmo Fernet (criptografia simétrica). O propósito é entender como os dados podem ser protegidos criptograficamente e, inversamente, como o ransomware funciona para fins de defesa.
 
-## 🎯 Conceitos Educacionais
+##  Conceitos Educacionais
 
 - ✅ Entender criptografia simétrica
 - ✅ Aprender sobre algoritmo Fernet
@@ -35,7 +35,7 @@ Este projeto implementa um sistema educacional de criptografia e descriptografia
 - ✅ Mecanismos de ransomware (defensiva)
 - ✅ Importância de backups e segurança
 
-## 🛠️ Requisitos
+##  Requisitos
 
 - **Python 3.6+**
 - **cryptography** - Biblioteca criptográfica
@@ -46,7 +46,7 @@ Este projeto implementa um sistema educacional de criptografia e descriptografia
 pip install cryptography
 ```
 
-## 📂 Estrutura de Arquivos
+##  Estrutura de Arquivos
 
 ```
 ransomware/
@@ -57,7 +57,7 @@ ransomware/
 └── README.md
 ```
 
-## 🔒 Como Funciona - Criptografia Simétrica
+##  Como Funciona - Criptografia Simétrica
 
 ### O que é Fernet?
 
@@ -81,7 +81,7 @@ Arquivo Original (Legível)
 Arquivo Criptografado (Ilegível)
 ```
 
-## 📝 Uso (Ambiente Educacional Controlado)
+##  Uso (Ambiente Educacional Controlado)
 
 ### 1. Gerar Chave Criptográfica
 
@@ -125,7 +125,7 @@ python descriptografia.py
 # Resultado: documento.txt volta ao estado original
 ```
 
-## 📊 Estrutura do Código
+##  Estrutura do Código
 
 ### `criptografia.py`
 
@@ -182,21 +182,21 @@ Escreve em binário (wb)
 Arquivo Original
 ```
 
-## 🔑 Gerenciamento de Chaves
+##  Gerenciamento de Chaves
 
-### ⚠️ CRÍTICO: Proteção da Chave
+###  CRÍTICO: Proteção da Chave
 
 A segurança depende **completamente** da chave:
 
 ```python
-# ❌ NUNCA faça isso:
+#  NUNCA faça isso:
 key = "minha_chave_123"  # Hardcoded - INSEGURO!
 
-# ✅ SEMPRE faça isso:
+#  SEMPRE faça isso:
 with open("keys/chave.key", 'rb') as f:
     key = f.read()  # Armazenada separadamente
 
-# ✅ MELHOR ainda:
+#  MELHOR ainda:
 import os
 key = os.environ.get('ENCRYPTION_KEY')  # Variável de ambiente
 ```
@@ -207,7 +207,7 @@ key = os.environ.get('ENCRYPTION_KEY')  # Variável de ambiente
 - **Se roubarem a chave:** Dados podem ser descriptografados
 - **Ransomware rouba a chave:** Demanda resgate por chave e descriptografia
 
-## 📊 Tamanho de Dados
+##  Tamanho de Dados
 
 Fernet adiciona overhead:
 
@@ -218,7 +218,7 @@ Arquivo criptografado: 154 bytes (54 bytes de overhead)
 Overhead = Timestamp (8) + Versão (1) + IV (16) + HMAC (32) + Padding
 ```
 
-## 🛡️ Diferenças: Criptografia vs Ransomware
+##  Diferenças: Criptografia vs Ransomware
 
 | Aspecto | Criptografia Legítima | Ransomware |
 |---------|----------------------|-----------|
@@ -229,7 +229,7 @@ Overhead = Timestamp (8) + Versão (1) + IV (16) + HMAC (32) + Padding
 | **Intenção** | Confidencialidade | Extorsão/Dano |
 | **Legalidade** | Legal | ILEGAL |
 
-## 🔍 Como Funciona Ransomware Real
+##  Como Funciona Ransomware Real
 
 1. **Infecção** - Malware entra no sistema
 2. **Descoberta** - Identifica arquivos valiosos
@@ -258,11 +258,11 @@ Overhead = Timestamp (8) + Versão (1) + IV (16) + HMAC (32) + Padding
 ### Se Infectado
 - ✅ Isolar o computador da rede
 - ✅ NÃO pagar resgate (não garante descriptografia)
-- ✅ Reportar à polícia/FBI
+- ✅ Reportar à polícia
 - ✅ Restaurar de backup
 - ✅ Usar ferramentas de descriptografia (algumas existem)
 
-## 📚 Conceitos de Segurança
+##  Conceitos de Segurança
 
 ### Criptografia Simétrica (Fernet)
 - Uma chave para cifrar E decifrar
@@ -279,7 +279,7 @@ Overhead = Timestamp (8) + Versão (1) + IV (16) + HMAC (32) + Padding
 - Detecta modificações
 - Previne ataques de tampering
 
-## 🚨 Sinais de Infecção por Ransomware
+##  Sinais de Infecção por Ransomware
 
 - Arquivos renomeados com extensão desconhecida (.encrypted, .locked, etc)
 - Nota de resgate em cada pasta (README.txt, .html)
@@ -288,7 +288,7 @@ Overhead = Timestamp (8) + Versão (1) + IV (16) + HMAC (32) + Padding
 - Tela de bloqueio com demanda de resgate
 - Comunicação de rede suspeita
 
-## 📋 Checklist de Segurança
+##  Checklist de Segurança
 
 - [ ] NUNCA use este código em máquinas alheias
 - [ ] Use apenas em seus próprios arquivos para teste
@@ -298,24 +298,24 @@ Overhead = Timestamp (8) + Versão (1) + IV (16) + HMAC (32) + Padding
 - [ ] Use para aprender sobre defesa
 - [ ] Respeite a lei e propriedade alheia
 
-## 📚 Recursos Educacionais
+##  Recursos Educacionais
 
 - [OWASP - Cryptography](https://owasp.org/)
 - [Cryptography.io - Fernet](https://cryptography.io/en/latest/fernet/)
 - [FBI - Ransomware](https://www.fbi.gov/investigate/cyber)
 - [CISA - Ransomware Alerts](https://www.cisa.gov/)
 
-## 📄 Licença
+##  Licença
 
 Este projeto não possui licença especificada.
 
-## 👨‍💻 Autor
+##  Autor
 
 [deVictorS](https://github.com/deVictorS)
 
 ---
 
-## ⚖️ AVISO FINAL - LEIA COM ATENÇÃO
+##  AVISO FINAL - LEIA COM ATENÇÃO
 
 **Este código é fornecido APENAS para fins educacionais e de pesquisa defensiva.**
 
